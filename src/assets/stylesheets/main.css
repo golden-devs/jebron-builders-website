@@ -50,6 +50,12 @@ body {
   margin: auto; /* 2 */
 }
 
+.section__title {
+  font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /**
  * Masthead
  */
