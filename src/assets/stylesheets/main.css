@@ -34,6 +34,16 @@ body {
 }
 
 /**
+ * Accented uppercase text for styling the company name in text.
+ */
+
+.brand {
+  color: #e95d09;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/**
  * Generic section. A section's content maxes out to be around 1000px wide.
  *
  * 1. Generous vertical padding between sections, and some padding on the side
