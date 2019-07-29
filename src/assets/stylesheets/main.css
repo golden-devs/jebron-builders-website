@@ -17,3 +17,55 @@ body {
   font: 1.6rem/1.4 var(--font-stack);
   margin: 0;
 }
+
+/**
+ * Screen reader only
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/**
+ * Masthead
+ */
+
+.masthead {
+  background: #686868;
+  background: linear-gradient(to bottom right, #757575, #5f5f5f);
+  padding: 6rem 0;
+}
+
+/**
+ * Masthead logo images. Uses standard image centering.
+ */
+
+.masthead__logo,
+.masthead__text-logo {
+  display: block;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+.masthead__logo { max-width: 25rem; }
+.masthead__text-logo { max-width: 52rem; }
+
+/**
+ * The strip on which the logo text image is placed.
+ *
+ * 1. This color is slightly brighter than that in the spec, so the orange text
+ * is more legible.
+ */
+
+.masthead__strip {
+  background: #a8a8a8; /* 1 */
+  padding: 1.5rem;
+}
