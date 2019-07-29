@@ -34,6 +34,23 @@ body {
 }
 
 /**
+ * Generic section. A section's content maxes out to be around 1000px wide.
+ *
+ * 1. Generous vertical padding between sections, and some padding on the side
+ * between content and the display edge on mobile.
+ * 2. Horizontal centering.
+ */
+
+.section {
+  padding: 3rem 1.5rem; /* 1 */
+}
+
+.section__inner {
+  max-width: 100rem;
+  margin: auto; /* 2 */
+}
+
+/**
  * Masthead
  */
 
