@@ -90,6 +90,38 @@ body {
 }
 
 /**
+ * A flex container for three items. I'm tempted to combine this and the split
+ * block, but I don't think it's worth it.
+ *
+ * 1. Negative margins to offset the margins of the first item, keeping the
+ * whole thing symmetric.
+ */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -1.5rem; /* 1 */
+  margin-top: -1.5rem; /* 1 */
+}
+
+.flex-row__item {
+  border: 0.1rem solid #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  max-width: 32rem;
+}
+
+.flex-row__thumbnail {
+  display: block;
+  height: auto;
+  order: -1;
+  width: 100%;
+}
+
+/**
  * Masthead
  */
 
