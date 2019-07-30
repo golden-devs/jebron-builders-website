@@ -44,6 +44,32 @@ body {
 }
 
 /**
+ * Generic buttons.
+ */
+
+.btn {
+  background: #e95d09;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #d45509;
+}
+
+.btn_block {
+  display: block;
+  width: 100%;
+}
+
+/**
  * Generic section. A section's content maxes out to be around 1000px wide.
  *
  * 1. Generous vertical padding between sections, and some padding on the side
@@ -192,4 +218,34 @@ body {
   height: auto;
   margin: auto;
   max-width: 100%;
+}
+
+/**
+ * Contact Section
+ */
+
+.contact__form {
+  margin: auto;
+  max-width: 60rem;
+}
+
+/**
+ * Container for inputs (or label/input pairs)
+ */
+
+.contact__form-group {
+  padding: 0.75rem 0;
+}
+
+.contact__input-field,
+.contact__message-field {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact__message-field {
+  resize: vertical;
 }
