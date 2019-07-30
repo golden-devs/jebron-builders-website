@@ -125,3 +125,16 @@ body {
   background: #a8a8a8; /* 1 */
   padding: 1.5rem;
 }
+
+/**
+ * About Section
+ */
+
+.about__prose {
+  text-align: center;
+}
+
+.about__prose_size_l {
+  font-size: 2rem;
+  font-weight: 300;
+}
