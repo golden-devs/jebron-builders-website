@@ -138,3 +138,26 @@ body {
   font-size: 2rem;
   font-weight: 300;
 }
+
+/**
+ * Products Section
+ */
+
+.products__grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin: auto;
+}
+
+/**
+ * For now, each item is an img element. This might change to divs in the future
+ * as more info is given to us.
+ */
+
+.products__item {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
