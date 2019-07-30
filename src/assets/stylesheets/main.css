@@ -67,6 +67,29 @@ body {
 }
 
 /**
+ * Flex container for a row of two columns.
+ *
+ * 1. Negative margin to offset the first column's left margin.
+ */
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3rem; /* 1 */
+}
+
+/**
+ * 1. Space between the columns. The left margin of the first column will be
+ * offset by the parent's negative left margin.
+ */
+
+.split__item {
+  flex-basis: 20rem;
+  flex-grow: 1;
+  margin-left: 3rem; /* 1 */
+}
+
+/**
  * Masthead
  */
 
