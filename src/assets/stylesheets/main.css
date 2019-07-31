@@ -115,6 +115,10 @@ body {
   margin-left: 3rem; /* 1 */
 }
 
+.split_col_l .split__item {
+  flex-basis: 30rem;
+}
+
 /**
  * A flex container for three items. I'm tempted to combine this and the split
  * block, but I don't think it's worth it.
@@ -144,6 +148,42 @@ body {
   display: block;
   height: auto;
   order: -1;
+  width: 100%;
+}
+
+/**
+ * Centers a single block within its container.
+ */
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**
+ * Responsive embedded iframe map. The iframe is assumed to be 600x450 (but any
+ * dimension should be fine as long as the aspect ratio is 4:3).
+ *
+ * <div class="map">
+ *   <iframe class="map__iframe" src="..." width="600" height="450" ...></iframe>
+ * </div>
+ *
+ * 1. Necessary amount of padding for a 4:3 iframe (3/4 == 0.75)
+ */
+
+.map {
+  overflow: hidden;
+  padding-top: 75%; /* 1 */
+  position: relative;
+}
+
+.map__iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
