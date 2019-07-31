@@ -81,6 +81,11 @@ body {
   padding: 3rem 1.5rem; /* 1 */
 }
 
+.section_theme_dark {
+  background: #232323;
+  color: #fff;
+}
+
 .section__inner {
   max-width: 100rem;
   margin: auto; /* 2 */
