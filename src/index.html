@@ -8,78 +8,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jebron Builders Development Corp.</title>
     <link rel="shortcut icon" href="favicon128.png">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
   </head>
 
   <body>
-    <header>
-      <h1>Jebron Builders Development Corp.</h1>
+    <header class="masthead">
+      <h1 class="sr-only">Jebron Builders Development Corporation</h1>
+      <img class="masthead__logo" src="assets/images/logo_no-bg_no-text.png" alt="">
+      <div class="masthead__strip">
+        <img class="masthead__text-logo" src="assets/images/logo_no-bg_text-only.png" alt="">
+      </div>
     </header>
 
-    <section>
-      <h2>About Us</h2>
-      <p>
-        <span class="brand">Jebron Builders Development Corp.</span> is a family-owned corporation engaged primarily in general construction and supply of construction materials.
-      </p>
-      <p>
-        The foundation of the company is a geniune commitment to providing the best client-centered construction and management services based on business expertise and practical experience.
-      </p>
+    <section class="section about">
+      <div class="section__inner">
+        <h2 class="section__title">About Us</h2>
+        <p class="about__prose about__prose_size_l">
+          <span class="brand">Jebron Builders Development Corp.</span> is a family-owned corporation engaged primarily in general construction and supply of construction materials.
+        </p>
+        <p class="about__prose about__prose_size_l">
+          The foundation of the company is a geniune commitment to providing the best client-centered construction and management services based on business expertise and practical experience.
+        </p>
 
-      <h3>Vision</h3>
-      <p>
-        <span class="brand">Jebron Builders Development Corp.</span> is committed to be a diverse family-owned construction company that will grow to be the most respected in the industry.
-      </p>
-
-      <h3>Mission</h3>
-      <p>
-        <span class="brand">Jebron Builders Development Corp.</span> is dedicated to be a dynamic construction company that will provide the highest quality construction services available.
-      </p>
-    </section>
-
-    <section>
-      <h2>Products</h2>
-      <!-- Each product might have some sort of text description in the future, as I hope would be the case. -->
-      <div>
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-      </div>
-    </section>
-
-    <section>
-      <h2>Services</h2>
-      <div>
-        <div>
-          <h3>Trucking/Hauling</h3>
-          <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
-        </div>
-        <div>
-          <h3>Construction</h3>
-          <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
-        </div>
-        <div>
-          <h3>Equipment Rental</h3>
-          <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+        <div class="split">
+          <div class="split__item">
+            <h3 class="section__title section__title_size_s">Vision</h3>
+            <p class="about__prose">
+              <span class="brand">Jebron Builders Development Corp.</span> is committed to be a diverse family-owned construction company that will grow to be the most respected in the industry.
+            </p>
+          </div>
+          <div class="split__item">
+            <h3 class="section__title section__title_size_s">Mission</h3>
+            <p class="about__prose">
+              <span class="brand">Jebron Builders Development Corp.</span> is dedicated to be a dynamic construction company that will provide the highest quality construction services available.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <!--
-        Each project might have some sort of text description in the future, as I hope would be the case.
-        Also it's not specified how many projects there will be. I'll put three for the time being.
-      -->
-      <div>
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
-        <img src="https://dummyimage.com/300x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
+    <section class="section products">
+      <div class="section__inner">
+        <h2 class="section__title">Products</h2>
+        <!-- Each product might have some sort of text description in the future, as I hope would be the case. -->
+        <div class="products__grid">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+        </div>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="section__inner">
+        <h2 class="section__title">Services</h2>
+
+        <div class="flex-row">
+          <div class="flex-row__item">
+            <h3 class="section__title">Trucking/Hauling</h3>
+            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+          </div>
+          <div class="flex-row__item">
+            <h3 class="section__title">Construction</h3>
+            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+          </div>
+          <div class="flex-row__item">
+            <h3 class="section__title">Equipment Rental</h3>
+            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects">
+      <div class="section__inner">
+        <h2 class="section__title">Projects</h2>
+        <!--
+          Each project might have some sort of text description in the future, as I hope would be the case.
+          Also it's not specified how many projects there will be. I'll put three for the time being.
+        -->
+        <div class="flex-row">
+          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
+          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
+          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
+        </div>
       </div>
     </section>
 
@@ -89,45 +108,65 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.7816759976016!2d121.18903482915798!3d14.47741299936757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c408ce5dc703%3A0xca6807765f949407!2sJebron+Builders+Development+Corp.!5e0!3m2!1sen!2sph!4v1564381412615!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     -->
 
-    <section>
-      <h2>Contact</h2>
-      <!-- Replace email with 'jebronbuilders@yahoo.com'. I'm using my email as a placeholder. -->
-      <form action="https://formspree.io/kevcomedia@gmail.com" method="POST">
-        <label for="name">Your name:</label>
-        <input id="name" type="text" name="name" required>
+    <section class="section section__ contact">
+      <div class="section__inner">
+        <h2 class="section__title">Contact</h2>
+        <!-- Replace email with 'jebronbuilders@yahoo.com'. I'm using my email as a placeholder. -->
+        <form class="contact__form" action="https://formspree.io/kevcomedia@gmail.com" method="POST">
+          <div class="split">
+            <div class="split__item contact__form-group">
+              <label class="contact__label" for="name">Your name:</label>
+              <input class="contact__input-field" id="name" type="text" name="name" required>
+            </div>
 
-        <label for="email">Your email:</label>
-        <input id="email" type="email" name="_replyto" required>
+            <div class="split__item contact__form-group">
+              <label class="contact__label" for="email">Your email:</label>
+              <input class="contact__input-field" id="email" type="email" name="_replyto" required>
+            </div>
+          </div>
 
-        <label for="message">Your message:</label>
-        <textarea rows="5" name="message" required></textarea>
+          <div class="contact__form-group">
+            <label class="contact__label" for="message">Your message:</label>
+            <textarea class="contact__message-field" rows="5" name="message" required></textarea>
+          </div>
 
-        <input type="hidden" name="_subject" value="Inquiry">
-        <button type="submit">Send</button>
+          <div class="contact__form-group">
+            <input type="hidden" name="_subject" value="Inquiry">
+            <button class="btn btn_block" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
     </section>
 
-    <footer>
-      <div>
-        <!-- TODO Add logo with name here. -->
-      </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="split">
+          <div class="split__item">
+            <img class="page-footer__logo" src="assets/images/logo.png" alt="Jebron Builders Development Corp. logo" width="400" height="100">
+          </div>
 
-      <div>
-        <h2>Business Hours</h2>
-        <p>
-          Monday to Saturday<br>
-          <time datetime="08:00">8:00 AM</time> to <time datetime="17:00">5:00 PM</time>
+          <div class="split__item">
+            <h2 class="page-footer__title">Business Hours</h2>
+            <p>
+              Monday to Saturday<br>
+              <time datetime="08:00">8:00 AM</time> to <time datetime="17:00">5:00 PM</time>
+            </p>
+
+            <h2 class="sr-only">Contact Info</h2>
+            <address class="page-footer__contact-info">
+              <a class="page-footer__link" href="tel:+6323683702">+63 2 368 3702</a><br>
+              <a class="page-footer__link" href="tel:+6322130485">+63 2 213 0485</a><br>
+              <a class="page-footer__link" href="tel:+639167455635">+63 916 745 5635</a><br>
+              <a class="page-footer__link" href="mailto:jebronbuilders@yahoo.com">jebronbuilders@yahoo.com</a>
+            </address>
+          </div>
+        </div>
+
+        <p class="page-footer__copy">
+          <small>&copy; 2019 Jebron Builders Development Corp.</small>
         </p>
       </div>
-
-      <div>
-        <h2>Contact Info</h2>
-        <address>
-          <a href="tel:+6323683702">+63 2 368 3702</a><br>
-          <a href="tel:+6322130485">+63 2 213 0485</a><br>
-          <a href="tel:+639167455635">+63 916 745 5635</a><br>
-          <a href="mailto:jebronbuilders@yahoo.com">jebronbuilders@yahoo.com</a>
-        </address>
-      </div>
     </footer>
+
   </body>
 </html>
