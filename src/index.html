@@ -102,41 +102,53 @@
       </div>
     </section>
 
-    <!--
-      TODO Embed a map here.
-      I'm not sure if a plain embedded Google map has usage limits. In any case it might be better to add it after styles/layouts have been added.
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.7816759976016!2d121.18903482915798!3d14.47741299936757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c408ce5dc703%3A0xca6807765f949407!2sJebron+Builders+Development+Corp.!5e0!3m2!1sen!2sph!4v1564381412615!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    -->
-
-    <section class="section section__ contact">
+    <div class="section">
       <div class="section__inner">
-        <h2 class="section__title">Contact</h2>
-        <!-- Replace email with 'jebronbuilders@yahoo.com'. I'm using my email as a placeholder. -->
-        <form class="contact__form" action="https://formspree.io/kevcomedia@gmail.com" method="POST">
-          <div class="split">
-            <div class="split__item contact__form-group">
-              <label class="contact__label" for="name">Your name:</label>
-              <input class="contact__input-field" id="name" type="text" name="name" required>
-            </div>
+        <div class="split split_col_l">
 
-            <div class="split__item contact__form-group">
-              <label class="contact__label" for="email">Your email:</label>
-              <input class="contact__input-field" id="email" type="email" name="_replyto" required>
+          <div class="split__item vertical-align">
+            <h2 class="sr-only">Map</h2>
+            <div class="map">
+              <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.7816759976016!2d121.18903482915798!3d14.47741299936757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c408ce5dc703%3A0xca6807765f949407!2sJebron+Builders+Development+Corp.!5e0!3m2!1sen!2sph!4v1564381412615!5m2!1sen!2sph" width="600" height="450" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
 
-          <div class="contact__form-group">
-            <label class="contact__label" for="message">Your message:</label>
-            <textarea class="contact__message-field" rows="5" name="message" required></textarea>
+          <div class="split__item">
+            <section class="section section__ contact">
+              <div class="section__inner">
+                <h2 class="section__title">Contact</h2>
+                <!-- Replace email with 'jebronbuilders@yahoo.com'. I'm using my email as a placeholder. -->
+                <form class="contact__form" action="https://formspree.io/kevcomedia@gmail.com" method="POST">
+                  <div class="split">
+                    <div class="split__item contact__form-group">
+                      <label class="contact__label" for="name">Your name:</label>
+                      <input class="contact__input-field" id="name" type="text" name="name" required>
+                    </div>
+
+                    <div class="split__item contact__form-group">
+                      <label class="contact__label" for="email">Your email:</label>
+                      <input class="contact__input-field" id="email" type="email" name="_replyto" required>
+                    </div>
+                  </div>
+
+                  <div class="contact__form-group">
+                    <label class="contact__label" for="message">Your message:</label>
+                    <textarea class="contact__message-field" rows="5" name="message" required></textarea>
+                  </div>
+
+                  <div class="contact__form-group">
+                    <input type="hidden" name="_subject" value="Inquiry">
+                    <button class="btn btn_block" type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </section>
           </div>
 
-          <div class="contact__form-group">
-            <input type="hidden" name="_subject" value="Inquiry">
-            <button class="btn btn_block" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
+        </div><!-- .split end -->
+      </div><!-- .section__inner end -->
+    </div><!-- .section end -->
+
 
     <footer class="page-footer">
       <div class="page-footer__inner">
