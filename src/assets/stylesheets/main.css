@@ -266,6 +266,58 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  /**
+   * 1. Remove vertical padding. They will be provided by the nav links instead
+   * (to give the impression that the links are flushed to the top/bottom edges
+   * of the nav.
+   */
+
+  .navbar {
+    padding-bottom: 0; /* 1 */
+    padding-top: 0; /* 1 */
+  }
+
+  /**
+   * 1. Inner nav becomes a single-row flex container.
+   */
+
+  .navbar__inner {
+    flex-wrap: nowrap; /* 1 */
+    margin: auto;
+    max-width: 100rem;
+  }
+
+  /**
+   * 1. Toggle button is not needed for large viewports.
+   */
+
+  .navbar__toggler {
+    display: none; /* 1 */
+  }
+
+  /**
+   * 1. Links are now arranged horizontally along the navbar.
+   * 2. Flex value for mobile view is no longer applicable; revert to default.
+   * 3. Top margin for mobile view is no longer applicable; remove it.
+   */
+
+  .navbar__links {
+    display: flex; /* 1 */
+    flex: unset; /* 2 */
+    margin: 0; /* 3 */
+  }
+
+  /**
+   * 1. Space between links. Also provide the vertical whitespace for the
+   * navbar.
+   */
+
+  .navbar__link {
+    padding: 1.5rem; /* 1 */
+  }
+}
+
 /**
  * Masthead
  */
