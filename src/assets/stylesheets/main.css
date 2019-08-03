@@ -254,6 +254,16 @@ body {
 }
 
 /**
+ * Hides the links when applied. I might add animations later. Note that because
+ * of how CSS works this display property is always overridden in the media
+ * query below.
+ */
+
+.navbar__links_collapsed {
+  display: none;
+}
+
+/**
  * Actual nav link.
  *
  * 1. Vertical spacing between links.
