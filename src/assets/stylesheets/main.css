@@ -193,6 +193,80 @@ body {
 }
 
 /**
+ * Navbar styles. The styles on the root level of this stylesheet assume a
+ * mobile viewport.
+ */
+
+.navbar {
+  background: #fff;
+  padding: 1.5rem;
+}
+
+/**
+ * Contains the contents of the navbar.
+ *
+ * 1. Make it so the links are below the brand and toggle button. Based on
+ * Bootstrap 4's styles.
+ */
+
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap; /* 1 */
+  justify-content: space-between; /* 1 */
+}
+
+/**
+ * The image used for the brand link on the left side of the navbar.
+ *
+ * 1. Sensible size for the image.
+ */
+
+.navbar__brand-logo {
+  width: 45px; /* 1 */
+  height: auto;
+}
+
+/**
+ * The toggle button for showing/hiding the nav links.
+ */
+
+.navbar__toggler {
+  background: inherit;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+/**
+ * List of nav links.
+ *
+ * 1. Occupy full width of the navbar. This causes the list to wrap to the next
+ * row.
+ * 2. Top margin to separate list from brand and toggle button.
+ */
+
+.navbar__links {
+  flex: 1 1 100%; /* 1 */
+  list-style: none;
+  margin: 1.5rem 0 0; /* 2 */
+  padding: 0;
+}
+
+/**
+ * Actual nav link.
+ *
+ * 1. Vertical spacing between links.
+ */
+
+.navbar__link {
+  color: #e95d09;
+  display: block;
+  padding: 1rem 0; /* 1 */
+  text-decoration: none;
+}
+
+/**
  * Masthead
  */
 
