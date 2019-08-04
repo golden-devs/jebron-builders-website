@@ -361,11 +361,26 @@ body {
 
 /**
  * Masthead
+ *
+ * 1. Masthead height on mobile is viewport height minus heights of navbar and
+ * bottom panel.
  */
 
 .masthead {
   background: #2c2c2c no-repeat center / cover url('/assets/images/masthead-bg.jpg');
+  height: calc(100vh - 11rem);
   padding: 6rem 0;
+}
+
+/**
+ * 1. Larger viewports don't have a bottom panel, so remove that from the
+ * equation.
+ */
+
+@media screen and (min-width: 768px) {
+  .masthead {
+    height: calc(100vh - 5rem); /* 1 */
+  }
 }
 
 /**
