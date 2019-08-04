@@ -14,6 +14,11 @@
   </head>
 
   <body id="page-top">
+    <div id="js-page-top"><!--
+      Empty div for the purpose of detecting the top of the page.
+      Actually not the top, because the body has top padding. But good enough.
+    --></div>
+
     <header>
       <nav class="navbar">
         <div class="navbar__inner">
@@ -209,7 +214,7 @@
     </footer>
 
     <!-- I'm not sure where to properly place floating buttons. I'll just put it at the bottom for now. -->
-    <section class="bottom-panel">
+    <section class="bottom-panel" id="js-bottom-panel">
       <h2 class="sr-only">Call us!</h2>
       <a class="bottom-panel__btn" href="tel:+6323683702">
         <span class="bottom-panel__icon fas fa-phone fa-fw fa-2x" aria-hidden="true"></span>
