@@ -6,7 +6,12 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
+/**
+ * 1. Padding to accommodate fixed navbar.
+ */
 
 body {
   background: #fff;
@@ -16,6 +21,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   margin: 0;
+  padding-top: 5rem; /* 1 */
 }
 
 /**
@@ -190,6 +196,167 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+/**
+ * Navbar styles. The styles on the root level of this stylesheet assume a
+ * mobile viewport.
+ *
+ * 1. Fix to top of viewport.
+ * 2. Make sure it's on top of other elements (especially the map iframe).
+ */
+
+.navbar {
+  background: #fff;
+  border-bottom: 0.1rem solid #4d4d4d;
+  left: 0; /* 1 */
+  padding: 0 1.5rem;
+  position: fixed; /* 1 */
+  top: 0; /* 1 */
+  width: 100%; /* 1 */
+  z-index: 1; /* 2 */
+}
+
+/**
+ * Contains the contents of the navbar.
+ *
+ * 1. Make it so the links are below the brand and toggle button. Based on
+ * Bootstrap 4's styles.
+ */
+
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap; /* 1 */
+  justify-content: space-between; /* 1 */
+}
+
+/**
+ * 1. Provide the initial height for the navbar. I could have set this as the
+ * inner's min-height instead, but the brand and toggler gets pushed up when the
+ * list is uncollapsed.
+ */
+
+.navbar__brand {
+  height: 5rem; /* 1 */
+}
+
+/**
+ * The image used for the brand link on the left side of the navbar.
+ *
+ * 1. Sensible size for the image.
+ */
+
+.navbar__brand-logo {
+  width: 45px; /* 1 */
+  height: auto;
+}
+
+/**
+ * The toggle button for showing/hiding the nav links.
+ */
+
+.navbar__toggler {
+  background: inherit;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+/**
+ * List of nav links.
+ *
+ * 1. Occupy full width of the navbar. This causes the list to wrap to the next
+ * row.
+ * 2. Top margin to separate list from brand and toggle button.
+ */
+
+.navbar__links {
+  flex: 1 1 100%; /* 1 */
+  list-style: none;
+  margin: 1.5rem 0 0; /* 2 */
+  padding: 0;
+}
+
+/**
+ * Hides the links when applied. I might add animations later. Note that because
+ * of how CSS works this display property is always overridden in the media
+ * query below.
+ */
+
+.navbar__links_collapsed {
+  display: none;
+}
+
+/**
+ * Actual nav link.
+ *
+ * 1. Vertical spacing between links.
+ */
+
+.navbar__link {
+  color: #e95d09;
+  display: block;
+  padding: 1rem 0; /* 1 */
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  /**
+   * 1. Remove vertical padding. They will be provided by the nav links instead
+   * (to give the impression that the links are flushed to the top/bottom edges
+   * of the nav.
+   */
+
+  .navbar {
+    padding-bottom: 0; /* 1 */
+    padding-top: 0; /* 1 */
+  }
+
+  /**
+   * 1. Inner nav becomes a single-row flex container.
+   */
+
+  .navbar__inner {
+    flex-wrap: nowrap; /* 1 */
+    margin: auto;
+    max-width: 100rem;
+  }
+
+  /**
+   * 1. Toggle button is not needed for large viewports.
+   */
+
+  .navbar__toggler {
+    display: none; /* 1 */
+  }
+
+  /**
+   * 1. Links are now arranged horizontally along the navbar.
+   * 2. Flex value for mobile view is no longer applicable; revert to default.
+   * 3. Top margin for mobile view is no longer applicable; remove it.
+   */
+
+  .navbar__links {
+    display: flex; /* 1 */
+    flex: unset; /* 2 */
+    margin: 0; /* 3 */
+  }
+
+  /**
+   * 1. Space between links.
+   * 2. Center the text within the link vertically.
+   * 3. Make sure the link is flushed vertically against the nav's top/bottom
+   * edges.
+   */
+
+  .navbar__link {
+    align-items: center; /* 2 */
+    display: flex; /* 2 */
+    height: 100%; /* 3 */
+    padding: 0 1.5rem; /* 1 */
+  }
 }
 
 /**

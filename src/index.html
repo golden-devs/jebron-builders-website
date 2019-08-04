@@ -9,19 +9,41 @@
     <title>Jebron Builders Development Corp.</title>
     <link rel="shortcut icon" href="favicon128.png">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
   </head>
 
-  <body>
-    <header class="masthead">
-      <h1 class="sr-only">Jebron Builders Development Corporation</h1>
-      <img class="masthead__logo" src="assets/images/logo_no-bg_no-text.png" alt="">
-      <div class="masthead__strip">
-        <img class="masthead__text-logo" src="assets/images/logo_no-bg_text-only.png" alt="">
+  <body id="page-top">
+    <header>
+      <nav class="navbar">
+        <div class="navbar__inner">
+          <a class="navbar__brand vertical-align" href="#page-top">
+            <img class="navbar__brand-logo" src="assets/images/logo_no-bg_no-text_small.png" alt="Jebron Builders Development Corp. logo">
+          </a>
+          <button class="navbar__toggler" id="js-nav-toggle" type="button" aria-label="Toggle navigation">
+            <span class="fas fa-bars fa-fw fa-2x" aria-hidden="true"></span>
+          </button>
+
+          <ul class="navbar__links" id="js-nav-links">
+            <li class="navbar__link-item"><a class="navbar__link" href="#about">About</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#products">Products</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#services">Services</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#projects">Projects</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="masthead">
+        <h1 class="sr-only">Jebron Builders Development Corporation</h1>
+        <img class="masthead__logo" src="assets/images/logo_no-bg_no-text.png" alt="">
+        <div class="masthead__strip">
+          <img class="masthead__text-logo" src="assets/images/logo_no-bg_text-only.png" alt="">
+        </div>
       </div>
     </header>
 
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="section__inner">
         <h2 class="section__title">About Us</h2>
         <p class="about__prose about__prose_size_l">
@@ -48,7 +70,7 @@
       </div>
     </section>
 
-    <section class="section products">
+    <section class="section products" id="products">
       <div class="section__inner">
         <h2 class="section__title">Products</h2>
         <!-- Each product might have some sort of text description in the future, as I hope would be the case. -->
@@ -66,7 +88,7 @@
       </div>
     </section>
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="section__inner">
         <h2 class="section__title">Services</h2>
 
@@ -87,7 +109,7 @@
       </div>
     </section>
 
-    <section class="section projects">
+    <section class="section projects" id="projects">
       <div class="section__inner">
         <h2 class="section__title">Projects</h2>
         <!--
@@ -114,7 +136,7 @@
           </div>
 
           <div class="split__item">
-            <section class="section contact">
+            <section class="section contact" id="contact">
               <div class="section__inner">
                 <h2 class="section__title">Contact</h2>
                 <form class="contact__form" action="https://formspree.io/jebronbuilders@yahoo.com" method="POST">
@@ -179,5 +201,6 @@
       </div>
     </footer>
 
+    <script src="assets/scripts/index.js"></script>
   </body>
 </html>
