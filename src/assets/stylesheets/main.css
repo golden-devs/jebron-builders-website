@@ -550,6 +550,16 @@ body {
 }
 
 /**
+ * Hide the bottom panel for wide enough viewports. It's probably better to use
+ * browser detection to hide the bottom panel, but this is good enough.
+ */
+@media screen and (min-width: 768px) {
+  .bottom-panel {
+    display: none;
+  }
+}
+
+/**
  * Button styles for the bottom panel.
  *
  * 1. Button icon on top of label.
