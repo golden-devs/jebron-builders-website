@@ -498,9 +498,11 @@ body {
  * Container for tel/email links.
  *
  * 1. Increased line height for human thumbs.
+ * 2. More pronounced color compared to rest of footer text.
  */
 
 .page-footer__contact-info {
+  color: #000; /* 2 */
   font-size: 1.5rem;
   font-style: normal;
   line-height: 2; /* 1 */
@@ -508,7 +510,7 @@ body {
 
 .page-footer__link {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .page-footer__copy {
