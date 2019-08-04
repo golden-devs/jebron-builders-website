@@ -364,8 +364,7 @@ body {
  */
 
 .masthead {
-  background: #686868;
-  background: linear-gradient(to bottom right, #757575, #5f5f5f);
+  background: #2c2c2c no-repeat center / cover url('/assets/images/masthead-bg.jpg');
   padding: 6rem 0;
 }
 
@@ -392,7 +391,7 @@ body {
  */
 
 .masthead__strip {
-  background: #a8a8a8; /* 1 */
+  background: rgba(255, 255, 255, 0.75); /* 1 */
   padding: 1.5rem;
 }
 
