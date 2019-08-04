@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   'use strict';
 
+  setupNavbar();
+  setupBottomPanel();
+});
+
+function setupNavbar() {
   const navToggler = document.getElementById('js-nav-toggle');
   const navLinks = document.getElementById('js-nav-links');
 
@@ -20,4 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   navLinks.classList.add('navbar__links_collapsed');
-});
+}
+
+function setupBottomPanel() {
+  const bottomPanel = document.getElementById('js-bottom-panel');
+
+  const intersectionObserver = new IntersectionObserver(function(entries) {
+    const isPageTop = entries[0].intersectionRatio > 0;
+    if (isPageTop) {
+      bottomPanel.classList.remove('bottom-panel_hidden');
+    } else {
+      bottomPanel.classList.add('bottom-panel_hidden');
+    }
+  });
+
+  intersectionObserver.observe(document.getElementById('js-page-top'));
+}
