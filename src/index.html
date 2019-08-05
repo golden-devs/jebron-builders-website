@@ -9,19 +9,48 @@
     <title>Jebron Builders Development Corp.</title>
     <link rel="shortcut icon" href="favicon128.png">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
   </head>
 
-  <body>
-    <header class="masthead">
-      <h1 class="sr-only">Jebron Builders Development Corporation</h1>
-      <img class="masthead__logo" src="assets/images/logo_no-bg_no-text.png" alt="">
-      <div class="masthead__strip">
-        <img class="masthead__text-logo" src="assets/images/logo_no-bg_text-only.png" alt="">
+  <body id="page-top">
+    <div id="js-page-top"><!--
+      Empty div for the purpose of detecting the top of the page.
+      Actually not the top, because the body has top padding. But good enough.
+    --></div>
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar__inner">
+          <a class="navbar__brand vertical-align" href="#page-top">
+            <img class="navbar__brand-logo" src="assets/images/logo_no-bg_no-text_small.png" alt="Jebron Builders Development Corp. logo">
+          </a>
+          <button class="navbar__toggler" id="js-nav-toggle" type="button" aria-label="Toggle navigation">
+            <span class="fas fa-bars fa-fw fa-2x" aria-hidden="true"></span>
+          </button>
+
+          <ul class="navbar__links" id="js-nav-links">
+            <li class="navbar__link-item"><a class="navbar__link" href="#about">About</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#products">Products</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#services">Services</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#projects">Projects</a></li>
+            <li class="navbar__link-item"><a class="navbar__link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="masthead vertical-align">
+        <div class="masthead__inner">
+          <h1 class="sr-only">Jebron Builders Development Corporation</h1>
+          <img class="masthead__logo" src="assets/images/logo_no-bg_no-text.png" alt="">
+          <div class="masthead__strip">
+            <img class="masthead__text-logo" src="assets/images/logo_no-bg_text-only.png" alt="">
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="section__inner">
         <h2 class="section__title">About Us</h2>
         <p class="about__prose about__prose_size_l">
@@ -48,46 +77,46 @@
       </div>
     </section>
 
-    <section class="section products">
+    <section class="section products" id="products">
       <div class="section__inner">
         <h2 class="section__title">Products</h2>
         <!-- Each product might have some sort of text description in the future, as I hope would be the case. -->
         <div class="products__grid">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
-          <img class="products__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-1.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-2.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-3.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-2.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-3.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-1.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-3.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-1.jpg" alt="Product Image Placeholder">
+          <img class="products__item" src="assets/images/placeholder-product-2.jpg" alt="Product Image Placeholder">
         </div>
       </div>
     </section>
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="section__inner">
         <h2 class="section__title">Services</h2>
 
         <div class="flex-row">
           <div class="flex-row__item">
             <h3 class="section__title">Trucking/Hauling</h3>
-            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+            <img class="flex-row__thumbnail" src="assets/images/placeholder-truck.jpg" alt="Service Image Placeholder">
           </div>
           <div class="flex-row__item">
             <h3 class="section__title">Construction</h3>
-            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+            <img class="flex-row__thumbnail" src="assets/images/placeholder-construction.jpg" alt="Service Image Placeholder">
           </div>
           <div class="flex-row__item">
             <h3 class="section__title">Equipment Rental</h3>
-            <img class="flex-row__thumbnail" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Service Image Placeholder">
+            <img class="flex-row__thumbnail" src="assets/images/placeholder-equipment.jpg" alt="Service Image Placeholder">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section projects">
+    <section class="section projects" id="projects">
       <div class="section__inner">
         <h2 class="section__title">Projects</h2>
         <!--
@@ -95,9 +124,9 @@
           Also it's not specified how many projects there will be. I'll put three for the time being.
         -->
         <div class="flex-row">
-          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
-          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
-          <img class="flex-row__item" src="https://dummyimage.com/320x4:3/4d4d4d/ffffff&text=Jebron+Builders" alt="Project Image Placeholder">
+          <img class="flex-row__item" src="assets/images/placeholder-project.jpg" alt="Project Image Placeholder">
+          <img class="flex-row__item" src="assets/images/placeholder-project.jpg" alt="Project Image Placeholder">
+          <img class="flex-row__item" src="assets/images/placeholder-project.jpg" alt="Project Image Placeholder">
         </div>
       </div>
     </section>
@@ -114,7 +143,7 @@
           </div>
 
           <div class="split__item">
-            <section class="section contact">
+            <section class="section contact" id="contact">
               <div class="section__inner">
                 <h2 class="section__title">Contact</h2>
                 <form class="contact__form" action="https://formspree.io/jebronbuilders@yahoo.com" method="POST">
@@ -165,9 +194,16 @@
 
             <h2 class="sr-only">Contact Info</h2>
             <address class="page-footer__contact-info">
+              <span class="fas fa-phone fa-fw" aria-hidden="true"></span>
               <a class="page-footer__link" href="tel:+6323683702">+63 2 368 3702</a><br>
+
+              <span class="fas fa-phone fa-fw" aria-hidden="true"></span>
               <a class="page-footer__link" href="tel:+6322130485">+63 2 213 0485</a><br>
+
+              <span class="fas fa-mobile-alt fa-fw" aria-hidden="true"></span>
               <a class="page-footer__link" href="tel:+639167455635">+63 916 745 5635</a><br>
+
+              <span class="fas fa-envelope fa-fw" aria-hidden="true"></span>
               <a class="page-footer__link" href="mailto:jebronbuilders@yahoo.com">jebronbuilders@yahoo.com</a>
             </address>
           </div>
@@ -179,5 +215,23 @@
       </div>
     </footer>
 
+    <!-- I'm not sure where to properly place floating buttons. I'll just put it at the bottom for now. -->
+    <section class="bottom-panel" id="js-bottom-panel">
+      <h2 class="sr-only">Call us!</h2>
+      <a class="bottom-panel__btn" href="tel:+6323683702">
+        <span class="bottom-panel__icon fas fa-phone fa-fw fa-2x" aria-hidden="true"></span>
+        +63 2 368 3702
+      </a>
+      <a class="bottom-panel__btn" href="mailto:jebronbuilders@yahoo.com">
+        <span class="bottom-panel__icon fas fa-envelope fa-fw fa-2x" aria-hidden="true"></span>
+        Email us
+      </a>
+      <a class="bottom-panel__btn" href="tel:+639167455635">
+        <span class="bottom-panel__icon fas fa-mobile-alt fa-fw fa-2x" aria-hidden="true"></span>
+        +63 916 745 5635
+      </a>
+    </div>
+
+    <script src="assets/scripts/index.js"></script>
   </body>
 </html>

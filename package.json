@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf dist/",
-    "build": "npm run build:css && npm run build:images && npm run build:copy",
+    "build": "npm run build:css && npm run build:images && npm run build:js && npm run build:copy",
     "build:css": "postcss --use autoprefixer cssnano -m -o dist/assets/stylesheets/main.css src/assets/stylesheets/main.css",
     "build:images": "imagemin src/assets/images/* --out-dir=dist/assets/images",
+    "build:js": "cp -r src/assets/scripts dist/assets/scripts",
     "build:copy": "cp src/favicon128.png src/index.html dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
