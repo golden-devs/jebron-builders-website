@@ -1,8 +1,13 @@
 # Jebron Builders Development Corp. Website
 
-1.1.0
+1.2.0
 
 ## Changelog
+
+### 1.2.0
+
+- Update page emails.
+- Update project pictures.
 
 ### 1.1.0
 
