@@ -1,8 +1,12 @@
 # Jebron Builders Development Corp. Website
 
-1.2.0
+1.2.1
 
 ## Changelog
+
+### 1.2.1
+
+- Update landline numbers.
 
 ### 1.2.0
 
